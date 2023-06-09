@@ -12,7 +12,7 @@
 	</parent>
 
 	<groupId>com.basic</groupId>
-	<artifactId>docker.compose.example</artifactId>
+	<artifactId>java.backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Spring Boot backend for docker compose example</name>
 	<description>Demo project for Spring Boot</description>
@@ -72,6 +72,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>java-backend-${version}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
