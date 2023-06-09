@@ -1,0 +1,22 @@
+version: '3.3'
+services:
+  java_backend:
+    build:
+      context: ./java-backend
+      dockerfile: java-backend.dockerfile
+    container_name: java-backend
+    ports:
+      - '8080:8080'
+    labels:
+      NAME: "java_backend"
+  react_app:
+    build:
+      context: ./react-app
+      dockerfile: react-app.dockerfile
+    depends_on:
+      - java_backend
+    container_name: react-app
+    ports:
+      - 3000:3000
+    labels:
+      NAME: "react_app"
