@@ -108,4 +108,4 @@
 /**/WiredTiger
 /**/WiredTiger.lock
 /**/WiredTiger.turtle
-
+/**/mongodb-data
