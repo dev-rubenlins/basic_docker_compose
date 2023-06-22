@@ -83,7 +83,7 @@ public class RegisterNewUser  implements RegisterNewUserPort {
         }
 
         try {
-            if (result.getResultType().equals(ResultType.SUCCESS)){
+            if (result.isSuccess()){
                 User user = userFactory.newUser(email, password);
                 persistUser(user);
                 notifyNewUserRegistered(requestId,user.getId());
@@ -97,7 +97,7 @@ public class RegisterNewUser  implements RegisterNewUserPort {
 
         RegisterNewUserResponse response = new RegisterNewUserResponse(requestId, result);
 
-        return result.getResultType().equals(ResultType.SUCCESS) ?
+        return result.isSuccess() ?
                 presenter.prepareSuccessView(response) :
                 presenter.prepareFailView(response);
 

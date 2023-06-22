@@ -13,7 +13,8 @@
 		<module>util</module>
 		<module>entities</module>
 		<module>use_cases</module>
-	</modules>
+        <module>interface_adapters</module>
+    </modules>
 
 	<dependencies>
 		<dependency>
