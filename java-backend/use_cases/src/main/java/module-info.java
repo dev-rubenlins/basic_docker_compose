@@ -1,6 +1,7 @@
 module use.cases {
-    requires clean.architecture.basics;
     requires entities;
     requires util;
     requires lombok;
+
+    exports com.basic.docker.compose.example.use_cases;
 }

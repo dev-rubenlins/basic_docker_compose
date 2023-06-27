@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <groupId>com.basic</groupId>
-        <artifactId>java.backend.parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-        <relativePath/>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.0.0</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -15,6 +15,7 @@
     <groupId>com.basic</groupId>
     <artifactId>java.backend.entities</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -22,12 +23,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <!-- https://github.com/dev-rubenlins/java_clean_architecture_basics.git -->
-            <groupId>br.dev.rubenlins</groupId>
-            <artifactId>clean-architecture.basics</artifactId>
-            <version>0.0.1</version>
-        </dependency>
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -41,7 +36,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.24</version>
+            <version>1.18.26</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
@@ -59,7 +54,7 @@
                         <annotationProcessorPath>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
-                            <version>1.18.24</version>
+                            <version>1.18.26</version>
                         </annotationProcessorPath>
                     </annotationProcessorPaths>
                 </configuration>

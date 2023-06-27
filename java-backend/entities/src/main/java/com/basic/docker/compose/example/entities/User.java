@@ -1,6 +1,6 @@
 package com.basic.docker.compose.example.entities;
 
-import br.dev.rubenlins.clean_architecture.basics.OperationResult;
+import com.basic.docker.compose.example.clean_arch.util.OperationResult;
 
 import java.util.UUID;
 

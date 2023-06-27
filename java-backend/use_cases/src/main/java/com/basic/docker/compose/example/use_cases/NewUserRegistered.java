@@ -1,7 +1,7 @@
 package com.basic.docker.compose.example.use_cases;
 
-import br.dev.rubenlins.clean_architecture.basics.Event;
-import br.dev.rubenlins.clean_architecture.basics.ResultType;
+import com.basic.docker.compose.example.clean_arch.util.Event;
+import com.basic.docker.compose.example.clean_arch.util.ResultType;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import lombok.experimental.SuperBuilder;

@@ -1,6 +1,6 @@
 package com.basic.docker.compose.example.use_cases;
 
-import br.dev.rubenlins.clean_architecture.basics.UseCaseRequest;
+import com.basic.docker.compose.example.clean_arch.util.UseCaseRequest;
 import lombok.Getter;
 
 import java.time.LocalDateTime;

@@ -1,7 +1,7 @@
 package com.basic.docker.compose.example.use_cases;
 
-import br.dev.rubenlins.clean_architecture.basics.OperationResult;
-import br.dev.rubenlins.clean_architecture.basics.UseCaseResponse;
+import com.basic.docker.compose.example.clean_arch.util.OperationResult;
+import com.basic.docker.compose.example.clean_arch.util.UseCaseResponse;
 
 import java.util.UUID;
 

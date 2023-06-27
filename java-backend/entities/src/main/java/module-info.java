@@ -1,6 +1,5 @@
 module entities {
 
-    requires clean.architecture.basics;
     requires jakarta.validation;
     requires lombok;
     requires util;

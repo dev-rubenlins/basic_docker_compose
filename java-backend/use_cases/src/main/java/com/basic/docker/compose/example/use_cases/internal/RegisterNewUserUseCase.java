@@ -1,14 +1,11 @@
 package com.basic.docker.compose.example.use_cases.internal;
 
-import br.dev.rubenlins.clean_architecture.basics.EventPublisher;
-import br.dev.rubenlins.clean_architecture.basics.OperationResult;
-import br.dev.rubenlins.clean_architecture.basics.ResultType;
-import br.dev.rubenlins.clean_architecture.basics.UseCase;
+import com.basic.docker.compose.example.clean_arch.util.EventPublisher;
+import com.basic.docker.compose.example.clean_arch.util.OperationResult;
 import com.basic.docker.compose.example.entities.User;
 import com.basic.docker.compose.example.entities.UserFactory;
 import com.basic.docker.compose.example.use_cases.*;
 import com.basic.docker.compose.example.util.ExceptionUtils;
-import com.basic.docker.compose.example.util.ValidationUtils;
 import lombok.RequiredArgsConstructor;
 
 import java.util.ArrayList;
@@ -17,10 +14,10 @@ import java.util.Optional;
 import java.util.UUID;
 
 import static com.basic.docker.compose.example.util.ValidationUtils.*;
-import static br.dev.rubenlins.clean_architecture.basics.OperationResult.*;
+import static com.basic.docker.compose.example.clean_arch.util.OperationResult.*;
 
 @RequiredArgsConstructor
-public class RegisterNewUser  implements RegisterNewUserPort {
+public class RegisterNewUserUseCase implements RegisterNewUser {
 
     private static final String USER_ALREADY_EXISTS = "There is already an user associated to given e-mail.";
     private static final String USE_CASE_ACTION = "registering user";

@@ -1,6 +1,6 @@
 package com.basic.docker.compose.example.entities.internal;
 
-import br.dev.rubenlins.clean_architecture.basics.OperationResult;
+import com.basic.docker.compose.example.clean_arch.util.OperationResult;
 import com.basic.docker.compose.example.entities.User;
 import com.basic.docker.compose.example.util.ObjectUtils;
 import jakarta.validation.constraints.NotNull;
@@ -10,8 +10,8 @@ import lombok.Getter;
 import java.util.List;
 import java.util.UUID;
 
-import static br.dev.rubenlins.clean_architecture.basics.OperationResult.fail;
-import static br.dev.rubenlins.clean_architecture.basics.OperationResult.success;
+import static com.basic.docker.compose.example.clean_arch.util.OperationResult.fail;
+import static com.basic.docker.compose.example.clean_arch.util.OperationResult.success;
 import static com.basic.docker.compose.example.util.ValidationUtils.PASSWORD_DOES_NOT_MATCH_PATTERN_MSG;
 import static com.basic.docker.compose.example.util.ValidationUtils.passwordValid;
 

@@ -1,9 +1,22 @@
 version: '3.3'
 services:
+  mongodb:
+    image: mongo:5.0.0-focal
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: pass
+    volumes:
+      - ./mongodb/mongodb-data:/data/db
+      - ./mongodb/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    command: mongod
   java_backend:
     build:
       context: ./java-backend
       dockerfile: java-backend.dockerfile
+    depends_on:
+      - mongodb
     container_name: java-backend
     ports:
       - '8080:8080'
